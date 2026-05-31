@@ -13,6 +13,11 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+
+# Make the prompt prettier
+NEWLINE=$'\n'
+PROMPT="${NEWLINE}%K{#AD5437}%F{#FEF7F5}$(date +%_I:%M%P) %K{#EE9B80}%F{#FEF7F5} %n@%m %K{#E67049}%F{#EE9B80}%F{#FEF7F5} %~ %k%F{#E67049}%f❯" 
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/manasnair/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
